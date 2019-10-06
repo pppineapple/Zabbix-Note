@@ -44,7 +44,7 @@
 ```
 [root@MiWiFi-R1CM-srv zabbix-3.2.6]#echo 'hello world' > /var/www/html/index.html
 ```
-打开web，访问该server host的ip地址，即http://192.168.31.186出现hello world就表示apache服务正常启动。<br>
+打开web，访问该server host的ip地址，即**http://192.168.31.186** 出现hello world就表示apache服务正常启动。<br>
 ![验证apache服务正常启动](./image/验证apache正常启动.png)
 
 安装php5.6 如果有旧的php注意先删除
@@ -149,7 +149,7 @@ MariaDB [(none)]> flush privileges;Query OK, 0 rows affected (0.00 sec)
 [root@MiWiFi-R1CM-srv html]# systemctl restart mariadb.service```
 
 server host的ip地址是192.168.31.186。<br>
-在web端访问**http://192.168.31.186/zabbix/**就可以访问zabbix的web配置页面了。<br>
+在web端访问**http://192.168.31.186/zabbix/** 就可以访问zabbix的web配置页面了。<br>
 ![zabbix的web界面](./image/zabbix的web界面.png)
 
 ## 在zabbix的web GUI端继续配置
@@ -206,7 +206,7 @@ server host的ip地址是192.168.31.186。<br>
 [root@MiWiFi-R1CM-srv html]# systemctl restart httpd.service 
 ```
 
-在web端重新访问**http://192.168.31.186/zabbix/**，可以看到所有错误都已修复。
+在web端重新访问**http://192.168.31.186/zabbix/** ，可以看到所有错误都已修复。
 ![zabbixweb端配置2](./image/zabbixweb端配置2.png)
 
 在最后一步中zabbix无法在`/var/www/html/zabbix/conf/`目录中无法创建**zabbix.conf.php**，所以我们需要点击链接下载**zabbix.conf.php**，然后移动到`/var/www/html/zabbix/conf/`目录下，点击finish完成。
