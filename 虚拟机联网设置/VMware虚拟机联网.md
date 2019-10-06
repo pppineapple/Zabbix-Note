@@ -6,14 +6,14 @@ VMware安装linux虚拟机之后，linux虚拟机联网需要进行一些相关�
 * CentOS 7
 
 ## 具体步骤
-1. 首先在VMware软件中将linux虚拟机的网络模式设置为NAT
+1.首先在VMware软件中将linux虚拟机的网络模式设置为NAT
 	![截图1-1](image/1-1.png)
-2. 打开VMware软件中的**虚拟网络编辑器**记录下IP、子网掩码、网关。这三个信息将是后续linux虚拟机配置文件要修改的内容。
+2.打开VMware软件中的**虚拟网络编辑器**记录下IP、子网掩码、网关。这三个信息将是后续linux虚拟机配置文件要修改的内容。
 	![截图2-1](image/2-1.png)
 	![截图2-2](image/2-2.png)
-3. linux中网络配置文件位于`/etc/sysconfig/network-scripts/`路径下，所以要先以root权限进入到该路径下.<br>
+3.linux中网络配置文件位于`/etc/sysconfig/network-scripts/`路径下，所以要先以root权限进入到该路径下.其中该目录下ifcfg-ens33就是虚拟机的网卡配置文件。不同的操作系统文件名可能不同。<br>
 
-	```
+```
 [root@localhost pineapple]# cd /etc/sysconfig/network-scripts/
 [root@localhost network-scripts]# ls
 ifcfg-ens33          ifdown-isdn      ifup-bnep   ifup-routes
@@ -27,12 +27,11 @@ ifdown-ib            ifdown-tunnel    ifup-plusb  network-functions
 ifdown-ippp          ifup             ifup-post   network-functions-ipv6
 ifdown-ipv6          ifup-aliases     ifup-ppp
 [root@localhost network-scripts]# 
-	``` 
-	其中该目录下ifcfg-ens33就是虚拟机的网卡配置文件。不同的操作系统文件名可能不同。<br>
-
-4. 修改ifcfg-ens33配置文件的内容，并保存。<br>
+``` 
 	
-	```
+4.修改ifcfg-ens33配置文件的内容，并保存。ifcfg-ens33文件中去除了HWADDR和UUID，他们分别是mac地址和uuid标识<br>
+	
+```
 TYPE=Ethernet
 PROXY_METHOD=none
 BROWSER_ONLY=no
@@ -53,25 +52,26 @@ GATEWAY=192.168.202.2      # 网关地址，同第二步中查到的网关地址
 DNS1=114.114.114.114       # 备用DNS1
 DNS2=8.8.8.8	           # 备用DNS2
 ```
-	ifcfg-ens33文件中去除了HWADDR和UUID，他们分别是mac地址和uuid标识<br>
-5. 进入目录`/etc/udev/rules.d/`中删除**70-persistent-net.rules**文件，因为这是一个绑定mac地址的文件，在我们之前的配置文件ifcfg-ens33中，将mac地址项删除了，所以这个文件也要删除。<br>
 
-	```
+5.进入目录`/etc/udev/rules.d/`中删除**70-persistent-net.rules**文件，因为这是一个绑定mac地址的文件，在我们之前的配置文件ifcfg-ens33中，将mac地址项删除了，所以这个文件也要删除。<br>
+
+```
 [root@localhost ~]# cd /etc/sysconfig/network-scripts/
 [root@localhost network-scripts]# cd /etc/udev/rules.d/
 [root@localhost rules.d]# ls
 70-persistent-net.rules
 [root@localhost rules.d]# rm 70-persistent-net.rules
-[root@localhost rules.d]# 
-	```
-6. 重启虚拟机。既可以ping通外网了。<br>
+[root@localhost rules.d]#
+```
+
+6.重启虚拟机。既可以ping通外网了。<br>
 	
-	```
+```
 [root@localhost ~]# ping www.baidu.com
 PING www.a.shifen.com (183.232.231.174): 56 data bytes
 64 bytes from 183.232.231.174: icmp_seq=0 ttl=54 time=20.371 ms
 64 bytes from 183.232.231.174: icmp_seq=1 ttl=54 time=21.808 ms
 64 bytes from 183.232.231.174: icmp_seq=2 ttl=54 time=22.468 ms
-	```
+```
 
 
