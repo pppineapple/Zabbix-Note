@@ -153,7 +153,7 @@ server host的ip地址是192.168.31.186。<br>
 ![zabbix的web界面](./image/zabbix的web界面.png)
 
 ## 在zabbix的web GUI端继续配置
-在web端访问http://192.168.31.186/zabbix/，点击右下角Next step。发现依赖检查出现报错，需要修复。
+在web端访问**http://192.168.31.186/zabbix/** 点击右下角Next step。发现依赖检查出现报错，需要修复。
 ![zabbixweb端配置1](./image/zabbixweb端配置1.png)
 下拉右边的滑块，可以看到zabbix它要求的配置和现有server host的配置，我们就需要针对这个表信息将这些不满足的Fail项一一解决。
 
@@ -213,7 +213,7 @@ server host的ip地址是192.168.31.186。<br>
 ![zabbixweb端配置3](./image/zabbixweb端配置3.png)
 
 ## 进入zabbix server的Web GUI界面
-跟着上一步点击finish或者再次在web端访问http://192.168.31.186/zabbix，就会进入zabbix的web端登录界面，用户名admin，密码zabbix。
+跟着上一步点击finish或者再次在web端访问***http://192.168.31.186/zabbix** ，就会进入zabbix的web端登录界面，用户名admin，密码zabbix。
 
 ![zabbixweb端登录界面1](./image/zabbixweb端登录1.png)
 ![zabbixweb端登录界面2](./image/zabbixweb端登录2.png)
