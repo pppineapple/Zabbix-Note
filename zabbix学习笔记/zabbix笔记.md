@@ -114,3 +114,5 @@ zabbix监控客户端分为**主动监控**和**被动监控**，zabbix监控客
 
 * 主动监控模式：Agent主动请求Server获取agent的监控项列表，并主动将监控项内需要检测的数据提交给server/proxy，zabbix agent首先向serverActive配置的ip请求获取activeitems，获取并提交activeitems数据值到server/proxy。
 * 被动监控模式：Server向Agent请求获取监控项的数据，Agent返回数据，Server打开一个TCP连接，Server发送请求agent.ping，Agent接收到请求并且响应，Server处理接收到的数据。
+
+## 自定义zabbix监控项
