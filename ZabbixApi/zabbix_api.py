@@ -66,7 +66,7 @@ class ZabbixApi(object):
 
     def get_item(self, hostid, key):
         """
-
+        Getting some item info by hostid and key.
         :param hostid: List[str,] . A list of hosts you want to get some key_ info.
         :param key_name: str . A Key you want to get.
         :return: List[Dict{},] . A list of host's key info dict.
