@@ -11,5 +11,9 @@
 	1. 创建[zabbix学习笔记](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/zabbix%E7%AC%94%E8%AE%B0.md)。
 	2. 创建[zabbix自定义监控项笔记](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7.md)。
 	3. 创建[zabbix邮件报警笔记](https://github.com/pppineapple/Zabbix-Note/tree/master/Zabbix%E9%82%AE%E4%BB%B6%E6%8A%A5%E8%AD%A6)。
-* 20191014-20191020
+* 20191014 - 20191020
 	1. 创建[Python库用于调用ZabbixAPI获取zabbix信息](https://github.com/pppineapple/Zabbix-Note/tree/master/ZabbixApi)。
+* 20191021 - 20191027
+	1. 创建[Zabbix监控数据查看](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E7%9B%91%E6%8E%A7%E6%95%B0%E6%8D%AE%E6%9F%A5%E7%9C%8B/Zabbix%E7%9B%91%E6%8E%A7%E6%95%B0%E6%8D%AE%E6%9F%A5%E7%9C%8B.md)
+	2. 创建[Zabbix邮件告警(通过shell脚本告警媒介)](https://github.com/pppineapple/Zabbix-Note/blob/master/Zabbix%E9%82%AE%E4%BB%B6%E6%8A%A5%E8%AD%A6/zabbix%E9%82%AE%E4%BB%B6%E5%91%8A%E8%AD%A6(%E9%80%9A%E8%BF%87shell%E8%84%9A%E6%9C%AC%E5%91%8A%E8%AD%A6%E5%AA%92%E4%BB%8B).md)
+	3. 创建[Zabbix新建用户和用户组](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/zabbix%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E7%BB%84.md)

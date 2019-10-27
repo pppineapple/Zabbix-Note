@@ -65,7 +65,7 @@ zabbix默认自带Email、Jabber和SMS三种告警媒介。
 ![createmediatype1](./images/createmediatype1.png)
 
 ## 给用户添加告警媒介
-接下来我们给用户pppineapple添加告警媒介ZabbixLearnAlertMedia。
+接下来我们给用户pppineapple添加告警媒介ZabbixLearnAlertMedia。如果忘记zabbix用户相关操作可以回看我之前的笔记[zabbix创建用户和用户组](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/zabbix%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E7%BB%84.md)
 
 ![addalertmedia1](./images/addalertmedia1.png)
 ![addalertmedia2](./images/addalertmedia2.png)
