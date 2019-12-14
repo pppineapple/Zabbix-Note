@@ -17,3 +17,7 @@
 	1. 创建[Zabbix监控数据查看](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E7%9B%91%E6%8E%A7%E6%95%B0%E6%8D%AE%E6%9F%A5%E7%9C%8B/Zabbix%E7%9B%91%E6%8E%A7%E6%95%B0%E6%8D%AE%E6%9F%A5%E7%9C%8B.md)
 	2. 创建[Zabbix邮件告警(通过shell脚本告警媒介)](https://github.com/pppineapple/Zabbix-Note/blob/master/Zabbix%E9%82%AE%E4%BB%B6%E6%8A%A5%E8%AD%A6/zabbix%E9%82%AE%E4%BB%B6%E5%91%8A%E8%AD%A6(%E9%80%9A%E8%BF%87shell%E8%84%9A%E6%9C%AC%E5%91%8A%E8%AD%A6%E5%AA%92%E4%BB%8B).md)
 	3. 创建[Zabbix新建用户和用户组](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84/zabbix%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E7%BB%84.md)
+* 20191208 - 20191215
+	1. 创建[Zabbix数据库监控](https://github.com/pppineapple/Zabbix-Note/blob/master/zabbix%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%91%E6%8E%A7/Zabbix%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%91%E6%8E%A7.md)
+	
+	
